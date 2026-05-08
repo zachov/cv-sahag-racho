@@ -2,236 +2,718 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV – Sahag RACHO | Chef de projet IT / Responsable applicatif</title>
-  <meta name="description" content="CV en ligne de Sahag RACHO – Chef de projet IT / Responsable applicatif. Pilotage transverse, management, ERP, BI, digital, reprise de projets complexes." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV – Sahag RACHO | Responsable projets & transformation SI</title>
+
+  <meta
+    name="description"
+    content="CV de Sahag RACHO – Responsable projets & transformation SI. Pilotage transverse, reprise de projets complexes, transformation des systèmes d'information, coordination métiers & équipes techniques."
+  />
+
   <style>
     :root{
-      --bg:#f7f9fc;         /* fond léger */
-      --card:#ffffff;       /* cartes */
-      --ink:#1b2533;        /* texte principal */
-      --muted:#5f6b7c;      /* texte secondaire */
-      --brand:#1f4e79;      /* accent bleu-pro */
-      --line:#e6eef6;       /* séparateurs */
-    }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;}
-    *{box-sizing:border-box}
-
-    /* Layout */
-    .wrap{max-width:1100px;margin:32px auto;padding:0 20px;}
-    header{display:flex;gap:28px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 28px;box-shadow:0 6px 18px rgba(27,37,51,.06)}
-    .avatar{flex:0 0 88px;height:88px;border-radius:16px;background:linear-gradient(135deg,#e9f2fb,#f6f9ff);display:flex;align-items:center;justify-content:center;border:1px solid var(--line)}
-    .avatar span{font-weight:700;color:var(--brand)}
-    .head{flex:1 1 auto}
-    h1{margin:0 0 6px 0;font-size:28px;letter-spacing:.2px}
-    .subtitle{color:var(--brand);font-weight:600;margin-bottom:12px}
-    .meta{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px}
-    .meta a{color:var(--brand);text-decoration:none}
-    .meta a:hover{text-decoration:underline}
-    .actions{margin-left:auto;display:flex;gap:10px}
-    .btn{appearance:none;border:1px solid var(--brand);color:#fff;background:var(--brand);padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer}
-    .btn.outline{background:transparent;color:var(--brand)}
-
-    main{display:grid;grid-template-columns:320px 1fr;gap:24px;margin-top:24px}
-    aside, section{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 18px rgba(27,37,51,.05)}
-    aside{padding:22px}
-    section{padding:22px}
-    h2{margin:0 0 14px 0;font-size:16px;letter-spacing:.3px;text-transform:uppercase;color:var(--brand)}
-    .hr{height:1px;background:var(--line);margin:14px 0}
-
-    /* lists */
-    ul.clean{list-style:none;margin:0;padding:0}
-    ul.clean li{margin:8px 0;}
-    .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 10px;margin:6px 6px 0 0;font-size:13px;color:var(--muted)}
-
-    /* Experience */
-    .xp{display:grid;grid-template-columns:1fr auto;gap:4px 12px;margin-bottom:18px}
-    .xp .role{font-weight:700}
-    .xp .where{color:var(--muted)}
-    .xp .when{color:var(--muted);white-space:nowrap}
-    .xp .desc{grid-column:1/-1;color:var(--ink)}
-    .xp ul{margin:8px 0 0 18px}
-    .xp ul li{margin:6px 0}
-    .tech{grid-column:1/-1;color:var(--muted);font-style:italic;font-size:13px;margin-top:6px}
-
-    /* Small helpers */
-    .kv{display:grid;grid-template-columns:120px 1fr;gap:6px 12px}
-    .kv div{padding:2px 0}
-
-    /* Footer note */
-    footer{color:var(--muted);text-align:center;font-size:12px;margin:22px 0}
-
-    /* Responsive */
-    @media (max-width:880px){
-      main{grid-template-columns:1fr}
-      .actions{margin:12px 0 0 0}
+      --bg:#f4f7fb;
+      --card:#ffffff;
+      --text:#1e2937;
+      --muted:#667085;
+      --brand:#1f4e79;
+      --brand-light:#eaf2fa;
+      --line:#dfe7f1;
+      --success:#0f766e;
     }
 
-    /* Print styles (A4 friendly) */
+    *{
+      box-sizing:border-box;
+    }
+
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:
+        "Inter",
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      line-height:1.55;
+    }
+
+    body{
+      padding:32px 20px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(15,23,42,.05);
+    }
+
+    /* HEADER */
+
+    .hero{
+      display:grid;
+      grid-template-columns:120px 1fr;
+      gap:28px;
+      padding:34px;
+      align-items:center;
+    }
+
+    .photo{
+      width:120px;
+      height:120px;
+      border-radius:24px;
+      background:linear-gradient(135deg,#dbeafe,#eff6ff);
+      border:1px solid var(--line);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:36px;
+      font-weight:700;
+      color:var(--brand);
+    }
+
+    h1{
+      margin:0;
+      font-size:36px;
+      line-height:1.1;
+      letter-spacing:-0.5px;
+    }
+
+    .headline{
+      margin-top:8px;
+      color:var(--brand);
+      font-size:20px;
+      font-weight:700;
+    }
+
+    .intro{
+      margin-top:18px;
+      color:var(--text);
+      max-width:850px;
+      font-size:15px;
+    }
+
+    .meta{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .meta span{
+      background:#f8fafc;
+      border:1px solid var(--line);
+      padding:8px 12px;
+      border-radius:999px;
+    }
+
+    .meta a{
+      color:var(--brand);
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    /* LAYOUT */
+
+    .layout{
+      margin-top:24px;
+      display:grid;
+      grid-template-columns:320px 1fr;
+      gap:24px;
+      align-items:start;
+    }
+
+    aside,
+    main{
+      display:flex;
+      flex-direction:column;
+      gap:24px;
+    }
+
+    section{
+      padding:24px;
+    }
+
+    h2{
+      margin:0 0 18px;
+      color:var(--brand);
+      text-transform:uppercase;
+      letter-spacing:.6px;
+      font-size:15px;
+    }
+
+    p{
+      margin:0;
+    }
+
+    /* TAGS */
+
+    .tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .tag{
+      padding:8px 12px;
+      border-radius:999px;
+      background:var(--brand-light);
+      color:var(--brand);
+      font-size:13px;
+      font-weight:600;
+      border:1px solid #d7e7f7;
+    }
+
+    /* LIST */
+
+    ul.clean{
+      margin:0;
+      padding-left:18px;
+    }
+
+    ul.clean li{
+      margin:10px 0;
+    }
+
+    /* EXPERIENCE */
+
+    .xp{
+      padding-bottom:24px;
+      margin-bottom:24px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .xp:last-child{
+      border-bottom:none;
+      margin-bottom:0;
+      padding-bottom:0;
+    }
+
+    .xp-top{
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      align-items:flex-start;
+      margin-bottom:8px;
+    }
+
+    .role{
+      font-size:19px;
+      font-weight:700;
+    }
+
+    .date{
+      white-space:nowrap;
+      color:var(--muted);
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .company{
+      color:var(--muted);
+      margin-bottom:14px;
+      font-size:14px;
+    }
+
+    .impact{
+      display:inline-block;
+      margin-top:10px;
+      background:#ecfdf3;
+      color:var(--success);
+      border:1px solid #ccefd9;
+      border-radius:999px;
+      padding:6px 12px;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .tech{
+      margin-top:14px;
+      color:var(--muted);
+      font-size:13px;
+      font-style:italic;
+    }
+
+    /* HIGHLIGHTS */
+
+    .highlight{
+      padding:14px 16px;
+      border-radius:14px;
+      background:#f8fbff;
+      border:1px solid #dce9f6;
+      margin-bottom:12px;
+    }
+
+    .highlight strong{
+      color:var(--brand);
+    }
+
+    /* PRINT */
+
+    .print-btn{
+      position:fixed;
+      bottom:24px;
+      right:24px;
+      background:var(--brand);
+      color:#fff;
+      border:none;
+      border-radius:14px;
+      padding:14px 18px;
+      font-size:14px;
+      font-weight:700;
+      cursor:pointer;
+      box-shadow:0 10px 20px rgba(0,0,0,.15);
+    }
+
+    @media (max-width:960px){
+
+      .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .photo{
+        margin:0 auto;
+      }
+
+      .layout{
+        grid-template-columns:1fr;
+      }
+
+      .xp-top{
+        flex-direction:column;
+      }
+    }
+
     @media print{
-      body{background:#fff}
-      header,aside,section{box-shadow:none;border-color:#cfd8e3}
-      .actions,.btn{display:none}
-      .wrap{max-width:none;margin:0}
-      a{text-decoration:none;color:inherit}
-      .tag{border-color:#dfe7ef}
+
+      body{
+        background:#fff;
+        padding:0;
+        font-size:12px;
+      }
+
+      .container{
+        max-width:none;
+      }
+
+      .card{
+        box-shadow:none;
+        border:1px solid #cfd8e3;
+      }
+
+      .layout{
+        gap:14px;
+      }
+
+      aside,
+      main{
+        gap:14px;
+      }
+
+      section{
+        padding:18px;
+      }
+
+      h1{
+        font-size:28px;
+      }
+
+      .headline{
+        font-size:16px;
+      }
+
+      .intro{
+        font-size:13px;
+      }
+
+      .role{
+        font-size:16px;
+      }
+
+      .print-btn{
+        display:none;
+      }
+
+      .xp{
+        page-break-inside:avoid;
+      }
+
+      section{
+        page-break-inside:avoid;
+      }
+
+      a{
+        text-decoration:none;
+        color:inherit;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="avatar" aria-hidden="true"><span>SR</span></div>
-      <div class="head">
-        <h1>Sahag RACHO</h1>
-        <div class="subtitle">Chef de projet IT / Responsable applicatif</div>
-        <div class="meta">
-          <span>Agnetz (60600) – Mobilité Oise & Paris</span>
-          <span>•</span>
-          <span>Tél. : <em>0000000000</em></span>
-          <span>•</span>
-          <span>Email : <em>noreply@gmail.com</em></span>
-          <span>•</span>
-          <a href="https://fr.linkedin.com/in/sahag-racho-293ab0168" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-        </div>
+
+<div class="container">
+
+  <!-- HEADER -->
+
+  <header class="card hero">
+
+    <div class="photo">
+      SR
+    </div>
+
+    <div>
+
+      <h1>Sahag RACHO</h1>
+
+      <div class="headline">
+        Responsable projets & transformation SI
       </div>
-      <div class="actions">
-        <button class="btn outline" onclick="window.print()">Imprimer / PDF</button>
+
+      <div class="intro">
+        Professionnel IT transverse avec plus de 10 ans d’expérience dans le pilotage de projets stratégiques, la transformation des systèmes d’information et la reprise de sujets complexes.
+
+        Habitué aux environnements sensibles et fortement métiers (mutuelle, assurance, bailleurs sociaux), j’interviens à l’interface entre directions, métiers, équipes techniques et éditeurs afin de sécuriser les projets critiques, structurer les organisations et améliorer la performance opérationnelle.
+
+        Reconnu pour ma capacité à débloquer des projets en difficulté, coordonner des acteurs multiples et piloter des transformations SI dans des contextes à forts enjeux.
       </div>
-    </header>
 
-    <main>
-      <!-- Sidebar -->
-      <aside>
-        <h2>Profil</h2>
-        <p>Chef de projet informatique confirmé avec plus de 10 ans d’expérience. Spécialisé dans la conduite de projets transverses (ERP, BI, digital) et la reprise de sujets complexes. Orientation management / pilotage stratégique du SI.</p>
-        <div class="hr"></div>
+      <div class="meta">
+        <span>📍 Agnetz (60) – Mobilité Oise & Paris</span>
+        <span>📞 00 00 00 00 00</span>
+        <span>✉️ noreply@gmail.com</span>
+        <span>
+          🔗
+          <a
+            href="https://fr.linkedin.com/in/sahag-racho-293ab0168"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </span>
+      </div>
 
-        <h2>Compétences clés</h2>
-        <ul class="clean">
-          <li><strong>Gestion de projet</strong> : cadrage, planification, suivi, communication, conduite du changement</li>
-          <li><strong>Pilotage transverse</strong> : coordination équipes techniques & métiers, arbitrage, reporting, priorisation</li>
-          <li><strong>Gouvernance IT</strong> : MCO, urbanisation, amélioration continue</li>
-          <li><strong>Relation métiers</strong> : recueil du besoin, traduction technique, accompagnement utilisateurs</li>
-        </ul>
-        <div class="hr"></div>
+    </div>
 
-        <h2>Tech & Méthodes</h2>
-        <div>
-          <span class="tag">PHP</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">SQL</span>
-          <span class="tag">Symfony</span><span class="tag">Talend</span><span class="tag">Qlik</span><span class="tag">Uniface</span>
-          <span class="tag">Cognos</span><span class="tag">BDOC</span><span class="tag">Docker</span><span class="tag">Linux</span>
-          <span class="tag">Git</span><span class="tag">SonarQube</span><span class="tag">DWH</span>
-          <span class="tag">Agile</span><span class="tag">Scrum</span><span class="tag">Kanban</span><span class="tag">ITIL</span>
+  </header>
+
+  <!-- LAYOUT -->
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <aside>
+
+      <section class="card">
+
+        <h2>Réalisations clés</h2>
+
+        <div class="highlight">
+          <strong>AFAH 3.0 :</strong>
+          reprise et mise en production en 3 mois d’un projet critique bloqué depuis plusieurs années.
         </div>
-        <div class="hr"></div>
+
+        <div class="highlight">
+          <strong>Transformation SI :</strong>
+          pilotage transverse de projets ERP, BI, digital et flux dans des environnements complexes.
+        </div>
+
+        <div class="highlight">
+          <strong>Refonte e-commerce :</strong>
+          cadrage, coordination et développement interne d’un portail métier stratégique.
+        </div>
+
+        <div class="highlight">
+          <strong>Dématérialisation :</strong>
+          remise sur rails et mise en production d’un projet abandonné depuis 5 ans.
+        </div>
+
+        <div class="highlight">
+          <strong>Coordination DSI ↔ métiers :</strong>
+          structuration des échanges, priorisation et amélioration des processus.
+        </div>
+
+      </section>
+
+      <section class="card">
+
+        <h2>Compétences</h2>
+
+        <div class="tags">
+          <span class="tag">Pilotage SI</span>
+          <span class="tag">Transformation digitale</span>
+          <span class="tag">Gestion de projet</span>
+          <span class="tag">Coordination transverse</span>
+          <span class="tag">AMOA / MOE</span>
+          <span class="tag">ERP</span>
+          <span class="tag">BI / DWH</span>
+          <span class="tag">Conduite du changement</span>
+          <span class="tag">Gouvernance IT</span>
+          <span class="tag">Urbanisation SI</span>
+          <span class="tag">Relation métiers</span>
+          <span class="tag">Organisation DSI</span>
+        </div>
+
+      </section>
+
+      <section class="card">
+
+        <h2>Technologies</h2>
+
+        <div class="tags">
+          <span class="tag">PHP</span>
+          <span class="tag">Java</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Symfony</span>
+          <span class="tag">Talend</span>
+          <span class="tag">Cognos</span>
+          <span class="tag">BDOC</span>
+          <span class="tag">Qlik</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Git</span>
+          <span class="tag">Windows Server</span>
+          <span class="tag">vSphere</span>
+          <span class="tag">Fortinet</span>
+          <span class="tag">ITIL</span>
+          <span class="tag">Agile</span>
+          <span class="tag">Kanban</span>
+        </div>
+
+      </section>
+
+      <section class="card">
 
         <h2>Langues</h2>
-        <div class="kv">
-          <div>Français</div><div>Natif</div>
-          <div>Anglais</div><div>C1 (courant)</div>
-          <div>Arménien</div><div>Natif</div>
-        </div>
-        <div class="hr"></div>
+
+        <ul class="clean">
+          <li><strong>Français :</strong> langue maternelle</li>
+          <li><strong>Arménien :</strong> langue maternelle</li>
+          <li><strong>Anglais :</strong> courant (C1)</li>
+        </ul>
+
+      </section>
+
+      <section class="card">
 
         <h2>Formation</h2>
+
         <ul class="clean">
-          <li><strong>Master MIAGE</strong> – UPJV Amiens (2018–2020)</li>
-          <li><strong>Licence pro RGI</strong> – UPJV Amiens (2017–2018)</li>
-          <li><strong>DUT Informatique</strong> – UPJV Amiens (2016–2017)</li>
-          <li><strong>Master LCE Anglais</strong> – UPJV Amiens (2011–2016)</li>
-          <li><em>Certifications</em> : Axway AFAH 3.0, Uniface, Qlik</li>
+          <li><strong>Master MIAGE</strong> – UPJV Amiens</li>
+          <li><strong>Licence professionnelle RGI</strong> – UPJV Amiens</li>
+          <li><strong>DUT Informatique</strong> – UPJV Amiens</li>
+          <li><strong>Master LCE Anglais</strong> – UPJV Amiens</li>
         </ul>
-        <div class="hr"></div>
 
-        <h2>Centres d’intérêt</h2>
-        <p>Veille technologique • Entrepreneuriat • Rénovation • Sport</p>
-      </aside>
+      </section>
 
-      <!-- Main column -->
-      <section>
+    </aside>
+
+    <!-- MAIN -->
+
+    <main>
+
+      <section class="card">
+
         <h2>Expériences professionnelles</h2>
 
-        <article class="xp">
-          <div class="role">Chef de projet informatique – CCMO Mutuelle</div>
-          <div class="when">Mars 2023 – Aujourd’hui</div>
-          <div class="where">Beauvais (Oise) · Mutuelle santé – Direction IT (MOE / AMOA / Infra)</div>
-          <div class="desc">
-            <ul>
-              <li><strong>Migration AIS → AFAH 3.0</strong> : reprise d’un sujet bloqué depuis 2 ans, coordination Axway/DSI, <strong>mise en production en 3 mois</strong>, formation des key users.</li>
-              <li><strong>Refonte du site e‑commerce</strong> : cadrage, planification, pilotage et développement interne (phase finale).</li>
-              <li><strong>Supervision DWH & BI (Cognos)</strong> : rapports stratégiques et MCO.</li>
-              <li>Encadrement fonctionnel outils internes & transverses (Edeal, OGC, AIX). Animation de la relation IT/métiers.</li>
-            </ul>
-          </div>
-          <div class="tech">Techs : PHP · Java J2EE · SQL · Cognos · BDOC · AFAH 3.0 · Edeal · AIX · Docker · Git · Linux</div>
-        </article>
+        <!-- CCMO -->
 
         <article class="xp">
-          <div class="role">Chef de projet informatique – SAHLM de l’Oise</div>
-          <div class="when">Juil. 2021 – Fév. 2023</div>
-          <div class="where">Beauvais (Oise) · DSI (3 personnes)</div>
-          <div class="desc">
-            <ul>
-              <li><strong>États des lieux dématérialisés</strong> : projet en échec depuis 5 ans repris et <strong>mis en production en 6 mois</strong> (cadrage, tests, formation).</li>
-              <li>Déploiement d’une <strong>MDM</strong> pour smartphones & tablettes (accompagnement EDL).</li>
-              <li>Gestion applicative <strong>ERP</strong> : relation éditeur, budget, priorisation des demandes métiers.</li>
-              <li>Supervision de l’<strong>infrastructure</strong> : vSphere, Veeam, Fortinet. Mise en place de routines DSI ↔ métiers.</li>
-            </ul>
+
+          <div class="xp-top">
+            <div class="role">
+              Chef de projet informatique transverse – CCMO Mutuelle
+            </div>
+
+            <div class="date">
+              Depuis mars 2023
+            </div>
           </div>
-          <div class="tech">Techs : vSphere · Veeam · Fortinet · SQL · ERP Métier · MDM · Windows Server · Teams · Téléphonie IP</div>
+
+          <div class="company">
+            Beauvais (60) · Mutuelle santé · Direction des systèmes d’information
+          </div>
+
+          <ul class="clean">
+            <li>
+              Reprise d’un projet critique de migration AIS → AFAH 3.0 bloqué depuis plusieurs années : coordination DSI, Axway et partenaires externes jusqu’à la mise en production.
+            </li>
+
+            <li>
+              Pilotage transverse de projets SI touchant les flux, la BI, l’éditique, les outils métiers et les processus de gestion.
+            </li>
+
+            <li>
+              Refonte du site e-commerce : cadrage, organisation, coordination et développement interne des dernières phases.
+            </li>
+
+            <li>
+              Supervision et maintien opérationnel du DWH / BI Cognos et accompagnement des métiers sur les reportings stratégiques.
+            </li>
+
+            <li>
+              Interface entre équipes techniques, métiers, prestataires et direction afin de sécuriser les projets et fluidifier les arbitrages.
+            </li>
+          </ul>
+
+          <div class="impact">
+            Projet critique remis en production en 3 mois
+          </div>
+
+          <div class="tech">
+            Cognos · AFAH 3.0 · BDOC · PHP · Java · SQL · Linux · Docker · API Manager · ERP · Flux SI
+          </div>
+
         </article>
 
-        <article class="xp">
-          <div class="role">Analyste développeur → Chef de projet – Picardie Habitat / Clésence</div>
-          <div class="when">2017 – 2021</div>
-          <div class="where">Compiègne (Oise) · Bailleur social (fusion avec Clésence)</div>
-          <div class="desc">
-            <ul>
-              <li>Coordination technique lors de la <strong>migration ERP</strong> : transformation & intégration de données (Talend).</li>
-              <li>Chef de projet <strong>SphinxIQ2</strong> : grilles de surveillance & qualité (gardiens d’immeuble).</li>
-              <li>Site web interne <strong>numéros d’urgence</strong> (PHP) : cadrage, QR codes, coordination com/print.</li>
-              <li>Interfaces entre outil d’<strong>état des lieux</strong> et ERP. Chef de projet <strong>Genesys (Uniface)</strong> jusqu’à la mise en prod.</li>
-            </ul>
-          </div>
-          <div class="tech">Techs : PHP · SQL · Talend · Uniface · SphinxIQ2 · Genesys ERP · Shell · Batch</div>
-        </article>
+        <!-- SAHLM -->
 
         <article class="xp">
-          <div class="role">Stagiaire – ITHONE (ESN)</div>
-          <div class="when">2016 – 2017</div>
-          <div class="where">Paris – La Défense</div>
-          <div class="desc">
-            <ul>
-              <li>Migration de <strong>serveurs physiques → cloud</strong> (Société Générale) : installation, déploiement, images.</li>
-              <li>Support technique N1, ticketing. <strong>Migration Pidgin</strong> pour un client international (anglais).</li>
-              <li>Assistance au débogage d’un projet web interne.</li>
-            </ul>
+
+          <div class="xp-top">
+            <div class="role">
+              Chef de projet informatique – SAHLM de l’Oise
+            </div>
+
+            <div class="date">
+              2021 – 2023
+            </div>
           </div>
-          <div class="tech">Techs : Windows · Linux · Cloud · Pidgin · Web</div>
+
+          <div class="company">
+            Beauvais (60) · Bailleur social · DSI de proximité
+          </div>
+
+          <ul class="clean">
+            <li>
+              Reprise et mise en production d’un projet de dématérialisation des états des lieux abandonné depuis 5 ans.
+            </li>
+
+            <li>
+              Coordination des tests, accompagnement utilisateurs et conduite du changement terrain.
+            </li>
+
+            <li>
+              Gestion applicative ERP : priorisation des besoins, relation éditeur et suivi budgétaire.
+            </li>
+
+            <li>
+              Participation au pilotage de l’infrastructure et amélioration des échanges DSI ↔ métiers.
+            </li>
+          </ul>
+
+          <div class="impact">
+            Projet historique débloqué et déployé en 6 mois
+          </div>
+
+          <div class="tech">
+            ERP métier · Windows Server · vSphere · Fortinet · SQL · MDM · Téléphonie IP
+          </div>
+
         </article>
+
+        <!-- CLESENCE -->
+
+        <article class="xp">
+
+          <div class="xp-top">
+            <div class="role">
+              Analyste développeur → Chef de projet – Picardie Habitat / Clésence
+            </div>
+
+            <div class="date">
+              2017 – 2021
+            </div>
+          </div>
+
+          <div class="company">
+            Compiègne (60) · Bailleur social
+          </div>
+
+          <ul class="clean">
+            <li>
+              Coordination technique et transformation des données lors d’une migration ERP dans un contexte de fusion d’entreprise.
+            </li>
+
+            <li>
+              Développement et pilotage de projets métiers internes (sites web, interfaces, outils de supervision).
+            </li>
+
+            <li>
+              Gestion de flux et d’interfaces entre solutions terrain et ERP.
+            </li>
+
+            <li>
+              Pilotage du projet Genesys jusqu’à la mise en production.
+            </li>
+          </ul>
+
+          <div class="tech">
+            Talend · SQL · PHP · Uniface · ERP · Shell · Batch
+          </div>
+
+        </article>
+
+        <!-- ITHONE -->
+
+        <article class="xp">
+
+          <div class="xp-top">
+            <div class="role">
+              Consultant stagiaire – ITHONE
+            </div>
+
+            <div class="date">
+              2016 – 2017
+            </div>
+          </div>
+
+          <div class="company">
+            Paris La Défense · ESN
+          </div>
+
+          <ul class="clean">
+            <li>
+              Participation à des migrations de serveurs physiques vers des environnements cloud.
+            </li>
+
+            <li>
+              Support technique et accompagnement d’utilisateurs internationaux en anglais.
+            </li>
+
+            <li>
+              Assistance sur des projets web et environnements systèmes.
+            </li>
+          </ul>
+
+        </article>
+
       </section>
+
     </main>
 
-    <footer>
-      © <span id="y"></span> – CV en ligne • Version imprimable disponible (Ctrl/Cmd + P)
-    </footer>
   </div>
 
-  <!-- JSON-LD pour SEO/partage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sahag RACHO",
-    "jobTitle": "Chef de projet IT / Responsable applicatif",
-    "address": {"@type":"PostalAddress","addressLocality":"Agnetz","postalCode":"60600","addressCountry":"FR"},
-    "url": "",
-    "sameAs": ["https://fr.linkedin.com/in/sahag-racho-293ab0168"]
-  }
-  </script>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+</div>
+
+<button class="print-btn" onclick="window.print()">
+  Export PDF
+</button>
+
 </body>
 </html>
